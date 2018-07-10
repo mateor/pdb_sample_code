@@ -53,5 +53,25 @@ class ObtuseWrapper(object):
     finally:
       print(comps)
 
+  def do_buggy_thing(self, num):
+    if num == 7:
+      raise self.WrapperException("It all went bad for kid rock")
+    return num
+
+  def try_pattern(self):
+    sum = 0
+    for i in range(10):
+      # sum += self.do_buggy_thing(i)
+      try:
+        self.do_buggy_thing(i)
+      except Exception:
+        import pdb; pdb.set_trace()
+    return sum
+
+
 kid_rock = ObtuseWrapper(name="Kid Rock", state="MI", began_career="1990")
+import ipdb; ipdb.set_trace()
 related_acts = kid_rock.get_contemporaries()
+
+
+
