@@ -40,6 +40,5 @@ class ObtuseWrapper(object):
       artists[year] = "Uncle Kracker"
     return artists
 
-import pdb; pdb.set_trace()
 # kid_rock = ObtuseWrapper(name="Kid Rock", state="MI", began_career="1990")
 # related_acts = kid_rock.contemporaries()

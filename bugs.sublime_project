@@ -1,0 +1,19 @@
+{
+  "settings": {
+    "rulers": [
+      120
+    ],
+    "ensure_newline_at_eof_on_save": true,
+    "remember_open_files": true,
+    "tab_completion": false,
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+  },
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	]
+}
